@@ -9,10 +9,10 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private tasksSer: TasksService , private title: Title) {
+  constructor(public tasksSer: TasksService , private title: Title) {
     this.title.setTitle('Task Manager')
    }
-
+    
   ngOnInit() {
   }
 
