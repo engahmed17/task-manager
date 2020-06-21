@@ -1,0 +1,14 @@
+<div *ngIf="!taskId">
+    <p class="alert alert-danger le">Can't Match Any Id</p>
+</div>
+<div *ngIf="taskId">
+    <input type="text" class="form-control le" placeholder="Task Title" [(ngModel)]="task.title">
+
+    <textarea class="form-control le" placeholder="Task Description" [(ngModel)]="task.decsription"></textarea>
+
+    <button class="btn btn-primary le" (click)="saveTask()"> Save</button>
+
+    <button class="btn btn-danger le" (click)="deleteTask()">Delete</button>
+
+    <a class="btn btn-danger le" routerLink="/">Cancel</a>
+</div>
