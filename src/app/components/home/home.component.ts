@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
     this.title.setTitle('Task Manager')
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   deleteTask(i) {
